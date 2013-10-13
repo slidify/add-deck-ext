@@ -5,6 +5,10 @@ framework   : deckjs
 mode        : selfcontained
 ---
 
+<link rel="stylesheet" href="http://recology.info/posterstalks/rvantalk/slides/themes/style/esa2012.css">
+<link rel="stylesheet" href="http://recology.info/posterstalks/rvantalk/slides/themes/style/common.css">
+
+
 # Add DeckJS Extension
 
 ---
