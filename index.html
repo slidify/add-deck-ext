@@ -70,7 +70,7 @@ mode        : selfcontained
 </section>
 <section class="slide " id="slide-4">
   <h2>Step 2: Download Extension</h2>
-  <p>Download the extension <a href="http://github.com/rchampourlier/deck.automatic.js">automatic</a> and add it to <a href="libraries/frameworks/deckjs/extensions">libraries/frameworks/deck/extensions</a>. You can do it manually, or run the following R code from your slide directory.</p>
+  <p>Download the extension <a href="http://github.com/rchampourlier/deck.automatic.js">automatic</a> and add it to <a href="http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/extensions">libraries/frameworks/deck/extensions</a>. You can do it manually, or run the following R code from your slide directory.</p>
 
 <pre><code class="r">require(downloader)
 download(&#39;https://github.com/rchampourlier/deck.automatic.js/archive/master.zip&#39;, &#39;automatic.zip&#39;)
@@ -83,7 +83,7 @@ unlink(&quot;deck.automatic.js-master&quot;)
 </section>
 <section class="slide " id="slide-5">
   <h2>Step 3: Modify Config.yml</h2>
-  <p>Modify <code>config.yml</code> in <a href="libraries/frameworks/deckjs/config.yml">libraries/frameworks/deckjs/config.yml</a> so that <code>automatic</code> is added to the list of extensions.</p>
+  <p>Modify <code>config.yml</code> in <a href="http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/config.yml">libraries/frameworks/deckjs/config.yml</a> so that <code>automatic</code> is added to the list of extensions.</p>
 
 <pre><code class="yaml">deckjs:
   theme: swiss
@@ -94,7 +94,7 @@ unlink(&quot;deck.automatic.js-master&quot;)
 </section>
 <section class="slide " id="slide-6">
   <h2>Step 4: Add Snippet</h2>
-  <p>Modify <a href="libraries/frameworks/deckjs/partials/snippet.html">libraries/frameworks/deckjs/partials/snippet.html</a> by replacing the section at the end of <code>snippet.html</code> that initializes the deck, to the following. You can configure the settings for <code>automatic</code> in this snippet.</p>
+  <p>Modify <a href="http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/partials/snippet.html">libraries/frameworks/deckjs/partials/snippet.html</a> by replacing the section at the end of <code>snippet.html</code> that initializes the deck, to the following. You can configure the settings for <code>automatic</code> in this snippet.</p>
 
 <pre><code class="html">&lt;!-- Initialize the deck --&gt;
 &lt;script&gt;
@@ -114,7 +114,7 @@ $(function() {
 </section>
 <section class="slide RAW" id="slide-7">
   <h2>Step 5: Add Play/Pause (Optional)</h2>
-  <p>If you wish to add play/pause control as described in the documentation for <a href="http://github.com/rchampourlier/deck.automatic.js">automatic</a>, you will need to modify <a href="libraries/frameworks/deckjs/layouts/deck.html">libraries/frameworks/deckjs/layouts/deck.html</a>, by replacing the <code>&lt;body&gt;</code> with the following</p>
+  <p>If you wish to add play/pause control as described in the documentation for <a href="http://github.com/rchampourlier/deck.automatic.js">automatic</a>, you will need to modify <a href="http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/layouts/deck.html">libraries/frameworks/deckjs/layouts/deck.html</a>, by replacing the <code>&lt;body&gt;</code> with the following</p>
 
 <pre><code>&lt;!-- Begin slides --&gt;
 
@@ -125,7 +125,7 @@ $(function() {
 </section>
 <section class="slide RAW" id="slide-8">
   <h2>Step 6: Custom Duration</h2>
-  <p>If you want to add custom slide durations, you will need to modify <a href="libraries/frameworks/deckjs/layouts/slide.html">libraries/frameworks/deckjs/layouts/slide.html</a> to</p>
+  <p>If you want to add custom slide durations, you will need to modify <a href="http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/layouts/slide.html">libraries/frameworks/deckjs/layouts/slide.html</a> to</p>
 
 <pre><code>&lt;section class=&quot;slide {{ slide.class }}&quot; id=&quot;{{ slide.id }}&quot; data-duration=&quot;{{ slide.duration}}&quot;&gt;
   {{{ slide.header }}}

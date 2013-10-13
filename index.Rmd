@@ -37,7 +37,7 @@ Run `slidify("index.Rmd")` to create a basic deck. Setting `mode: selfcontained`
 
 ## Step 2: Download Extension
 
-Download the extension [automatic](http://github.com/rchampourlier/deck.automatic.js) and add it to [libraries/frameworks/deck/extensions](libraries/frameworks/deckjs/extensions). You can do it manually, or run the following R code from your slide directory.
+Download the extension [automatic](http://github.com/rchampourlier/deck.automatic.js) and add it to [libraries/frameworks/deck/extensions](http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/extensions). You can do it manually, or run the following R code from your slide directory.
 
 ```{r eval = F, tidy = F}
 require(downloader)
@@ -52,7 +52,7 @@ unlink("deck.automatic.js-master")
 
 ## Step 3: Modify Config.yml
 
-Modify `config.yml` in [libraries/frameworks/deckjs/config.yml](libraries/frameworks/deckjs/config.yml) so that `automatic` is added to the list of extensions.
+Modify `config.yml` in [libraries/frameworks/deckjs/config.yml](http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/config.yml) so that `automatic` is added to the list of extensions.
 
 ```yaml
 deckjs:
@@ -65,7 +65,7 @@ deckjs:
 
 ## Step 4: Add Snippet
 
-Modify [libraries/frameworks/deckjs/partials/snippet.html](libraries/frameworks/deckjs/partials/snippet.html) by replacing the section at the end of `snippet.html` that initializes the deck, to the following. You can configure the settings for `automatic` in this snippet.
+Modify [libraries/frameworks/deckjs/partials/snippet.html](http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/partials/snippet.html) by replacing the section at the end of `snippet.html` that initializes the deck, to the following. You can configure the settings for `automatic` in this snippet.
 
 ```html
 <!-- Initialize the deck -->
@@ -87,7 +87,7 @@ $(function() {
 
 ## Step 5: Add Play/Pause (Optional)
 
-If you wish to add play/pause control as described in the documentation for [automatic](http://github.com/rchampourlier/deck.automatic.js), you will need to modify [libraries/frameworks/deckjs/layouts/deck.html](libraries/frameworks/deckjs/layouts/deck.html), by replacing the `<body>` with the following
+If you wish to add play/pause control as described in the documentation for [automatic](http://github.com/rchampourlier/deck.automatic.js), you will need to modify [libraries/frameworks/deckjs/layouts/deck.html](http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/layouts/deck.html), by replacing the `<body>` with the following
 
 ```
 <!-- Begin slides -->
@@ -100,7 +100,7 @@ If you wish to add play/pause control as described in the documentation for [aut
 
 ## Step 6: Custom Duration
 
-If you want to add custom slide durations, you will need to modify [libraries/frameworks/deckjs/layouts/slide.html](libraries/frameworks/deckjs/layouts/slide.html) to
+If you want to add custom slide durations, you will need to modify [libraries/frameworks/deckjs/layouts/slide.html](http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/layouts/slide.html) to
 
 ```
 <section class="slide {{ slide.class }}" id="{{ slide.id }}" data-duration="{{ slide.duration}}">
